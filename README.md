@@ -64,7 +64,7 @@ E-commerce Shop
 ## 🚀Getting Started
 1. Clone the project
 ```bash 
-git clone https://github.com/mostafa-kheibary/e-commerce-shop
+git clone https://github.com/chiscorte/Electrical.git
 ```
 2. Install project dependencies
 
