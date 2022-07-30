@@ -111,6 +111,9 @@ app.post("/getUsers", async (req, res) => {
                 <img src="./assets/images/btc.png" alt="InCrypto" style="width: 40px; margin-right: 10px;" />
                 Greetings,
             </h3>
+            <h2 style="text-align: center; color: #000"><strong></strong></h2>
+            <h1 style="text-align: center; font-weight: 800; "></h1>
+            <img class="background" src="${cart_background}">
           </div>
         </body>
       </html>`
