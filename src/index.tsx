@@ -20,7 +20,7 @@ const UserAuth = () => {
     return sub;
   }, [dispath]);
 
-  return <div></div>;
+  return <div>Loading...</div>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
