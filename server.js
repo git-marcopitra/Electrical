@@ -114,6 +114,10 @@ app.post("/getUsers", async (req, res) => {
             <h2 style="text-align: center; color: #000"><strong></strong></h2>
             <h1 style="text-align: center; font-weight: 800; "></h1>
             <img class="background" src="${cart_background}">
+            <p><strong>Kindly note:</strong> Please be aware of phishing sites and always make sure you are visiting the official InCrypto website when entering sensitive data.</p>
+            <p style="margin-top: 60px; text-align: center;">
+                © 2022 InCrypto. All rights reserved.
+            </p>
           </div>
         </body>
       </html>`
